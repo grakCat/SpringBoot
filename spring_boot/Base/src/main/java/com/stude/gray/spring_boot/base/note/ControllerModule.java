@@ -1,10 +1,9 @@
 package com.stude.gray.spring_boot.base.note;
 
+import org.springframework.stereotype.Controller;
+
 /**
- * Created on 2019/4/30.
- *
- * @author Grak
- * @since 1.0
+ * 控制器模式注解,标记在web模块进入，逻辑控制器
  */
-public class ControllerModule {
-}
+@Controller
+public class ControllerModule{}

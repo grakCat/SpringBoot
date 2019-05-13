@@ -5,16 +5,16 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.Ordered;
 
 /**
- * After HelloWorldApplicationContextInitializer
+ * After OneApplicationContextInitializer
  *
  * @author 小马哥
  * @since 2018/5/17
  */
-public class AfterHelloWorldApplicationContextInitializer implements ApplicationContextInitializer, Ordered {
+public class TwoApplicationContextInitializer implements ApplicationContextInitializer, Ordered {
 
     @Override
     public void initialize(ConfigurableApplicationContext applicationContext) {
-        System.out.println("After application.id = " + applicationContext.getId());
+        System.out.println("Two application.id = " + applicationContext.getId());
     }
 
     @Override

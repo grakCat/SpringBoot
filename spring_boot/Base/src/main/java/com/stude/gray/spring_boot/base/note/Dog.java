@@ -7,4 +7,6 @@ package com.stude.gray.spring_boot.base.note;
  * @since 1.0
  */
 public class Dog {
+
+    private String name = "Dog";
 }

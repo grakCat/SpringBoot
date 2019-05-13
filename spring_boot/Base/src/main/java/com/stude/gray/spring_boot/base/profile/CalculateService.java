@@ -6,5 +6,7 @@ package com.stude.gray.spring_boot.base.profile;
  * @author Grak
  * @since 1.0
  */
-public class CalculateService {
+public interface CalculateService {
+
+    int sum(int ... nums);
 }

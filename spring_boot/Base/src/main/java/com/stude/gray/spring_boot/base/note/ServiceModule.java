@@ -1,10 +1,9 @@
 package com.stude.gray.spring_boot.base.note;
 
+import org.springframework.stereotype.Service;
+
 /**
- * Created on 2019/4/30.
- *
- * @author Grak
- * @since 1.0
+ * 服务模式注解,业务逻辑上
  */
-public class ServiceModule {
-}
+@Service
+public class ServiceModule{}

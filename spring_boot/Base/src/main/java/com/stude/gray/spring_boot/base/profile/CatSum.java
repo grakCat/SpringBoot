@@ -12,12 +12,12 @@ import java.util.Arrays;
  * @since 1.0
  */
 @Service
-@Profile("Dog")
-public class DogSum implements CalculateService{
+@Profile("Cat")
+public class CatSum implements CalculateService{
 
     @Override
     public int sum(int... nums) {
-        System.out.println("Dog求和");
+        System.out.println("Cat求和");
         return  Arrays.stream(nums).reduce(0,Integer::sum);
     }
 }

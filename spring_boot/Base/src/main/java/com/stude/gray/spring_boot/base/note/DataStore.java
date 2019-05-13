@@ -1,10 +1,9 @@
 package com.stude.gray.spring_boot.base.note;
 
+import org.springframework.stereotype.Repository;
+
 /**
- * Created on 2019/4/30.
- *
- * @author Grak
- * @since 1.0
+ * 数据存储标，记在访问数据库的地方
  */
-public class DataStore {
-}
+@Repository
+public class DataStore{}

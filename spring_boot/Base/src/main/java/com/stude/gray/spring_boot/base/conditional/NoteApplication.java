@@ -1,4 +1,4 @@
-package com.stude.gray.spring_boot.base.profile;
+package com.stude.gray.spring_boot.base.conditional;
 
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,11 +14,9 @@ public class NoteApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = new SpringApplicationBuilder(NoteApplication.class)
                 .web(WebApplicationType.NONE)
-                .profiles("Dog")
                 .run(args);
-        CalculateService module = context.getBean(CalculateService.class);
-        System.out.println("calculateService.sum(1...10) : " +
-                module.sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+        Animal module = (Animal)context.getBean("animal");
+        System.out.println(module.toString());
         // 关闭上下文
         context.close();
     }

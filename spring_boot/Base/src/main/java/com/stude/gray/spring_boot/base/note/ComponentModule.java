@@ -1,10 +1,9 @@
 package com.stude.gray.spring_boot.base.note;
 
+import org.springframework.stereotype.Component;
+
 /**
- * Created on 2019/4/30.
- *
- * @author Grak
- * @since 1.0
+ * bean容器的基础注解，也可以是除下面注解其他地方标记
  */
-public class ComponentModule {
-}
+@Component
+public class ComponentModule{}

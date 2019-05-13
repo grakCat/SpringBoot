@@ -1,4 +1,4 @@
-package com.imooc.diveinspringboot.run;
+package com.stude.gray.spring_boot.application.listener;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringApplicationRunListener;
